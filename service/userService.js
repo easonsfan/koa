@@ -1,4 +1,4 @@
-const { promisePool } = require('../database')
+const promisePool = require('../database')
 class UserService{
   async getUserList(){
     const sql = 'SELECT u.id id, u.name name From user as u'
