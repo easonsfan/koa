@@ -1,3 +1,7 @@
+### 说明
+使用 **Koa** + **mysql2** 实现对用户增删改查的接口demo
+
+
 ### 一. 创建数据库
     CREATE DATABASE `coderhub`
 
