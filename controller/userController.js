@@ -33,6 +33,15 @@ class UserController{
       resultData:res
     }
   }
+  async updateUser(ctx,next){
+    const {username,password,id} = ctx.request.body
+    const res = await userService.updateUser(id,username,password)
+    ctx.body = {
+      errNo:0,
+      errMsg:'',
+      resultData:res
+    }
+  }
   async deleteUser(ctx,next){
     const { id } = ctx.request.body
     const rows = await userService.getUserById(id)
